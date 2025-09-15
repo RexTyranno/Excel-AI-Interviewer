@@ -1,0 +1,49 @@
+levels:
+  beginner:
+    topic_weights:
+      Basic_Formulas: 0.35
+      Sort_Filter: 0.20
+      Formatting: 0.15
+      Navigation_UI: 0.15
+      Data_Types: 0.15
+
+  intermediate:
+    topic_weights:
+      Conditional_Logic: 0.30
+      Text_Functions: 0.25
+      Date_Time: 0.20
+      Data_Validation: 0.25
+
+  advanced:
+    topic_weights:
+      Lookups: 0.45
+      Pivots_Charts: 0.40
+      Error_Handling: 0.15
+
+  expert:
+    topic_weights:
+      Power_Query: 0.50
+      Advanced_Formulas: 0.30
+      What_If: 0.20
+
+format_defaults_by_tier:
+  "1": explain_then_example
+  "2": step_by_step
+  "3": diagnose_and_fix
+
+thresholds:
+  promote: 0.50
+  demote: 0.10
+  coverage_required: 0.70
+
+policy:
+  max_questions: 20
+  min_questions_before_end: 10
+  scenario_trigger:
+    good_streak_at_level: 4
+    fallback_after_questions: 8
+  stop_after_scenario_if_coverage: 0.95
+  confidence_mix:
+    technical: 0.85
+    soft: 0.15
+  personalized_first_n: 3

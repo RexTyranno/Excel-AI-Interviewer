@@ -1,0 +1,676 @@
+# =======================
+# Beginner (Level 1)
+# =======================
+
+- id: Q-L1-BASIC-001
+  kind: question
+  topic: Basic_Formulas
+  tier: 1
+  level_tag: beginner
+  question_format: explain_then_example
+  text: "What is the difference between relative and absolute cell references in Excel?"
+  rubric:
+    correct: ["Explains A1 vs $A$1 behavior", "Provides an example formula"]
+    partial: ["Mentions difference but no example"]
+    incorrect: ["Confuses references with named ranges"]
+
+- id: Q-L1-BASIC-002
+  kind: question
+  topic: Basic_Formulas
+  tier: 1
+  level_tag: beginner
+  question_format: explain_then_example
+  text: "How would you create a simple formula to add the values in cells A1 and B1?"
+  rubric:
+    correct: ["Writes =A1+B1", "Explains equals sign starts formula"]
+    partial: ["Describes addition but no proper syntax"]
+    incorrect: ["Uses SUM incorrectly or confuses syntax"]
+
+- id: Q-L1-BASIC-003
+  kind: question
+  topic: Formatting
+  tier: 1
+  level_tag: beginner
+  question_format: compare_and_choose
+  text: "What’s the difference between applying a number format and changing column width?"
+  rubric:
+    correct:
+      [
+        "Explains number format affects display style",
+        "Column width affects layout only",
+      ]
+    partial: ["Explains one concept but not the other"]
+    incorrect: ["Confuses formatting with resizing"]
+
+- id: Q-L1-BASIC-004
+  kind: question
+  topic: Sort_Filter
+  tier: 2
+  level_tag: beginner
+  question_format: step_by_step
+  text: "How do you sort a list of names alphabetically in Excel?"
+  rubric:
+    correct: ["Select range", "Use Sort A–Z"]
+    partial: ["Mentions sort but no steps"]
+    incorrect: ["Confuses with filter or manual rearrange"]
+
+- id: Q-L1-BASIC-005
+  kind: question
+  topic: Navigation_UI
+  tier: 1
+  level_tag: beginner
+  question_format: explain_then_example
+  text: "What keyboard shortcut moves you to the last filled cell in a column?"
+  rubric:
+    correct: ["Mentions Ctrl+Down Arrow"]
+    partial: ["Mentions wrong shortcut but concept close"]
+    incorrect: ["No valid shortcut"]
+
+- id: Q-L1-BASIC-006
+  kind: question
+  topic: Basic_Formulas
+  tier: 2
+  level_tag: beginner
+  question_format: step_by_step
+  text: "Explain how to calculate the average of cells A1 through A10."
+  rubric:
+    correct: ["Mentions =AVERAGE(A1:A10)"]
+    partial: ["Describes averaging but wrong syntax"]
+    incorrect: ["No understanding of function usage"]
+
+- id: Q-L1-BASIC-007
+  kind: question
+  topic: Data_Types
+  tier: 1
+  level_tag: beginner
+  question_format: compare_and_choose
+  text: "What’s the difference between text stored as a number vs a real number?"
+  rubric:
+    correct:
+      [
+        "Mentions alignment (left vs right)",
+        "Notes numeric operations fail on text",
+      ]
+    partial: ["Mentions visual difference but not behavior"]
+    incorrect: ["No distinction"]
+
+- id: Q-L1-BASIC-008
+  kind: question
+  topic: Navigation_UI
+  tier: 2
+  level_tag: beginner
+  question_format: step_by_step
+  text: "Describe two ways to freeze the top row of a worksheet."
+  rubric:
+    correct:
+      [
+        "Mentions View > Freeze Panes > Top Row",
+        "Mentions shortcut or alternative",
+      ]
+    partial: ["Describes freeze panes vaguely"]
+    incorrect: ["Confuses with filter or split"]
+
+- id: Q-L1-BASIC-009
+  kind: question
+  topic: Basic_Formulas
+  tier: 1
+  level_tag: beginner
+  question_format: explain_then_example
+  text: "How do you use the fill handle to quickly copy a formula down a column?"
+  rubric:
+    correct:
+      ["Mentions dragging the fill handle", "Explains auto-fill behavior"]
+    partial: ["Mentions fill handle but not dragging"]
+    incorrect: ["Confuses with copy-paste"]
+
+- id: Q-L1-BASIC-010
+  kind: question
+  topic: Basic_Charts
+  tier: 1
+  level_tag: beginner
+  question_format: step_by_step
+  text: "What are the steps to create a simple bar chart from a data range?"
+  rubric:
+    correct: ["Select data range", "Insert > Chart > Bar Chart"]
+    partial: ["Mentions chart but not steps"]
+    incorrect: ["Confuses with line chart"]
+
+- id: Q-L1-BASIC-011
+  kind: question
+  topic: Data_Validation
+  tier: 1
+  level_tag: beginner
+  question_format: explain_then_example
+  text: "How can you set up a data validation rule to allow only whole numbers?"
+  rubric:
+    correct: ["Mentions Data Validation > Whole Number"]
+    partial: ["Describes validation vaguely"]
+    incorrect: ["Confuses with text validation"]
+
+# =======================
+# Intermediate (Level 2)
+# =======================
+
+- id: Q-L2-IF-001
+  kind: question
+  topic: Conditional_Logic
+  tier: 1
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "How would you write an IF formula that returns 'Pass' if score >=50, otherwise 'Fail'?"
+  rubric:
+    correct: ["Formula correct", "Mentions >= operator"]
+    partial: ["Logic right but syntax error"]
+    incorrect: ["Confuses with Conditional Formatting"]
+
+- id: Q-L2-IF-002
+  kind: question
+  topic: Conditional_Logic
+  tier: 2
+  level_tag: intermediate
+  question_format: step_by_step
+  text: "How do you build a nested IF to assign letter grades (A, B, C, F) based on ranges?"
+  rubric:
+    correct: ["Shows multiple IFs or IFS function", "Correct ranges"]
+    partial: ["Tries but misuses syntax"]
+    incorrect: ["Confuses with lookup table"]
+
+- id: Q-L2-IF-003
+  kind: question
+  topic: Conditional_Logic
+  tier: 1
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "How do you use VLOOKUP to find a value in a table?"
+  rubric:
+    correct:
+      ["Mentions VLOOKUP syntax", "Explains table array and column index"]
+    partial: ["Mentions VLOOKUP but not syntax"]
+    incorrect: ["Confuses with HLOOKUP"]
+
+- id: Q-L2-TEXT-001
+  kind: question
+  topic: Text_Functions
+  tier: 1
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "Which function extracts the first three characters of a string in Excel?"
+  rubric:
+    correct: ["Mentions LEFT(text,3)"]
+    partial: ["Mentions wrong function like MID"]
+    incorrect: ["No correct function"]
+
+- id: Q-L2-TEXT-002
+  kind: question
+  topic: Text_Functions
+  tier: 2
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "How can you remove extra spaces from text in Excel?"
+  rubric:
+    correct: ["Mentions TRIM function"]
+    partial: ["Mentions CLEAN but not TRIM"]
+    incorrect: ["Suggests manual deletion only"]
+
+- id: Q-L2-DATE-001
+  kind: question
+  topic: Date_Time
+  tier: 1
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "What function returns the current date in Excel?"
+  rubric:
+    correct: ["Mentions TODAY()"]
+    partial: ["Mentions NOW() but not date-specific"]
+    incorrect: ["Mentions unrelated function"]
+
+- id: Q-L2-DATE-002
+  kind: question
+  topic: Date_Time
+  tier: 2
+  level_tag: intermediate
+  question_format: step_by_step
+  text: "How do you calculate the number of working days between two dates?"
+  rubric:
+    correct: ["Mentions NETWORKDAYS or NETWORKDAYS.INTL"]
+    partial: ["Uses subtraction only"]
+    incorrect: ["No awareness of weekdays handling"]
+
+- id: Q-L2-VALID-001
+  kind: question
+  topic: Data_Validation
+  tier: 2
+  level_tag: intermediate
+  question_format: step_by_step
+  text: "How would you restrict input in a cell to a predefined list of values?"
+  rubric:
+    correct: ["Mentions Data Validation > List"]
+    partial: ["Describes vaguely 'restrict data'"]
+    incorrect: ["Confuses with conditional formatting"]
+
+- id: Q-L2-CF-001
+  kind: question
+  topic: Conditional_Formatting
+  tier: 2
+  level_tag: intermediate
+  question_format: step_by_step
+  text: "What steps are needed to apply conditional formatting to highlight cells greater than a certain value?"
+  rubric:
+    correct:
+      [
+        "Select range",
+        "Conditional Formatting > Highlight Cell Rules > Greater Than",
+      ]
+    partial: ["Mentions conditional formatting but not steps"]
+    incorrect: ["Confuses with data validation"]
+
+- id: Q-L2-CHART-001
+  kind: question
+  topic: Charts
+  tier: 1
+  level_tag: intermediate
+  question_format: explain_then_example
+  text: "How can you create a dynamic chart that updates automatically when new data is added?"
+  rubric:
+    correct:
+      ["Mentions using tables or named ranges", "Explains dynamic range setup"]
+    partial: ["Mentions dynamic chart but not setup"]
+    incorrect: ["No dynamic feature"]
+
+# =======================
+# Advanced (Level 3)
+# =======================
+
+- id: Q-L3-LOOKUP-001
+  kind: question
+  topic: Lookups
+  tier: 1
+  level_tag: advanced
+  question_format: compare_and_choose
+  text: "What's the difference between VLOOKUP and XLOOKUP?"
+  rubric:
+    correct:
+      [
+        "Mentions column position flexibility",
+        "XLOOKUP can return multiple columns",
+      ]
+    partial: ["Explains only partially"]
+    incorrect: ["No clear difference"]
+
+- id: Q-L3-ERROR-002
+  kind: question
+  topic: Error_Handling
+  tier: 2
+  level_tag: advanced
+  question_format: diagnose_and_fix
+  text: "What are the common causes of #REF! errors and how would you fix them?"
+  rubric:
+    correct:
+      [
+        "Mentions deleted references",
+        "Invalid cell references",
+        "Provides solutions",
+      ]
+    partial: ["Lists errors but no solutions"]
+    incorrect: ["No understanding of #REF! errors"]
+
+- id: Q-L3-ARRAY-001
+  kind: question
+  topic: Array_Formulas
+  tier: 2
+  level_tag: advanced
+  question_format: explain_then_example
+  text: "How do you use array formulas to perform calculations on multiple cells at once?"
+  rubric:
+    correct:
+      [
+        "Explains array formula concept",
+        "Mentions Ctrl+Shift+Enter or SPILL behavior",
+      ]
+    partial: ["Mentions array but not implementation"]
+    incorrect: ["No understanding of array formulas"]
+
+- id: Q-L3-DATA-001
+  kind: question
+  topic: Data_Analysis
+  tier: 3
+  level_tag: advanced
+  question_format: step_by_step
+  text: "How would you use Data Tables to perform what-if analysis with two variables?"
+  rubric:
+    correct:
+      [
+        "Mentions Data > What-If Analysis > Data Table",
+        "Explains row/column input cells",
+      ]
+    partial: ["Mentions Data Tables but not setup"]
+    incorrect: ["Confuses with PivotTable"]
+
+- id: Q-L3-LOOKUP-002
+  kind: question
+  topic: Lookups
+  tier: 2
+  level_tag: advanced
+  question_format: step_by_step
+  text: "How do you return the last matching value in a lookup?"
+  rubric:
+    correct: ["Mentions INDEX+MATCH with -1", "Or XLOOKUP search_mode -1"]
+    partial: ["Attempts but wrong search mode"]
+    incorrect: ["Plain VLOOKUP"]
+
+- id: Q-L3-LOOKUP-003
+  kind: question
+  topic: Lookups
+  tier: 3
+  level_tag: advanced
+  question_format: diagnose_and_fix
+  text: "A VLOOKUP formula is returning #N/A unexpectedly. What steps would you take to diagnose?"
+  rubric:
+    correct:
+      [
+        "Check lookup value exact match",
+        "Check table range includes column",
+        "Check data types",
+      ]
+    partial: ["Mentions one check only"]
+    incorrect: ["No troubleshooting approach"]
+
+- id: Q-L3-PIVOT-001
+  kind: question
+  topic: Pivots_Charts
+  tier: 1
+  level_tag: advanced
+  question_format: step_by_step
+  text: "What steps are required to create a PivotTable from a dataset?"
+  rubric:
+    correct:
+      [
+        "Select range",
+        "Insert PivotTable",
+        "Assign fields to rows/columns/values",
+      ]
+    partial: ["Describes pivot vaguely"]
+    incorrect: ["Confuses with chart"]
+
+- id: Q-L3-PIVOT-002
+  kind: question
+  topic: Pivots_Charts
+  tier: 2
+  level_tag: advanced
+  question_format: step_by_step
+  text: "How do you add a calculated field to a PivotTable?"
+  rubric:
+    correct: ["Mentions PivotTable Analyze > Fields > Calculated Field"]
+    partial: ["Says 'add formula' vaguely"]
+    incorrect: ["No valid method"]
+
+- id: Q-L3-PIVOT-003
+  kind: question
+  topic: Pivots_Charts
+  tier: 3
+  level_tag: advanced
+  question_format: diagnose_and_fix
+  text: "Your PivotTable is not updating after new data is added. What could be wrong?"
+  rubric:
+    correct: ["Data source range not updated", "Cache not refreshed"]
+    partial: ["Mentions refresh only"]
+    incorrect: ["No valid troubleshooting"]
+
+- id: Q-L3-ERROR-001
+  kind: question
+  topic: Error_Handling
+  tier: 1
+  level_tag: advanced
+  question_format: explain_then_example
+  text: "What function can you use to replace errors with a blank or message?"
+  rubric:
+    correct: ["Mentions IFERROR"]
+    partial: ["Mentions ISERROR without handling"]
+    incorrect: ["No relevant function"]
+
+# =======================
+# Expert (Level 4)
+# =======================
+
+- id: Q-L4-PQ-001
+  kind: question
+  topic: Power_Query
+  tier: 1
+  level_tag: expert
+  question_format: step_by_step
+  text: "How do you import a CSV file using Power Query?"
+  rubric:
+    correct: ["Mentions Data > Get Data > From File > From Text/CSV"]
+    partial: ["Mentions Power Query but no steps"]
+    incorrect: ["Confuses with manual import"]
+
+- id: Q-L4-MACRO-001
+  kind: question
+  topic: VBA_Macros
+  tier: 1
+  level_tag: expert
+  question_format: explain_then_example
+  text: "How would you record and edit a simple macro to automate repetitive tasks?"
+  rubric:
+    correct:
+      ["Mentions Developer tab > Record Macro", "Explains VBA editor basics"]
+    partial: ["Mentions recording but not editing"]
+    incorrect: ["No understanding of macro recording"]
+
+- id: Q-L4-PIVOT-001
+  kind: question
+  topic: Advanced_Pivots
+  tier: 2
+  level_tag: expert
+  question_format: step_by_step
+  text: "How do you create a calculated item in a PivotTable to compare performance against targets?"
+  rubric:
+    correct:
+      [
+        "Mentions PivotTable > Analyze > Fields, Items & Sets > Calculated Item",
+        "Explains formula creation",
+      ]
+    partial: ["Mentions calculated items but not steps"]
+    incorrect: ["Confuses with calculated field"]
+
+- id: Q-L4-INTEGRATION-001
+  kind: question
+  topic: Integration
+  tier: 3
+  level_tag: expert
+  question_format: explain_then_example
+  text: "How would you connect Excel to an external SQL database and refresh the data automatically?"
+  rubric:
+    correct:
+      [
+        "Mentions Data > Get Data > From Database",
+        "Explains connection properties and refresh",
+      ]
+    partial: ["Mentions database connection but not refresh"]
+    incorrect: ["No valid method"]
+
+- id: Q-L4-PQ-002
+  kind: question
+  topic: Power_Query
+  tier: 2
+  level_tag: expert
+  question_format: step_by_step
+  text: "How can you unpivot monthly columns (Jan–Dec) into rows using Power Query?"
+  rubric:
+    correct: ["Mentions Transform > Unpivot Columns"]
+    partial: ["Describes 'make rows' vaguely"]
+    incorrect: ["Confuses with PivotTable"]
+
+- id: Q-L4-PQ-003
+  kind: question
+  topic: Power_Query
+  tier: 3
+  level_tag: expert
+  question_format: diagnose_and_fix
+  text: "Power Query merge is failing due to mismatched data types. How would you fix this?"
+  rubric:
+    correct: ["Check and change column data types", "Ensure keys align"]
+    partial: ["Mentions check data types but no fix"]
+    incorrect: ["No valid troubleshooting"]
+
+- id: Q-L4-ADV-001
+  kind: question
+  topic: Advanced_Formulas
+  tier: 2
+  level_tag: expert
+  question_format: explain_then_example
+  text: "How do you use SUMIFS to total sales for a region in a given month?"
+  rubric:
+    correct: ["Mentions SUMIFS with multiple criteria"]
+    partial: ["Mentions SUMIF but not SUMIFS"]
+    incorrect: ["Wrong function"]
+
+- id: Q-L4-WHATIF-001
+  kind: question
+  topic: What_If
+  tier: 1
+  level_tag: expert
+  question_format: explain_then_example
+  text: "What tool in Excel allows you to find the input value needed to reach a target result?"
+  rubric:
+    correct: ["Mentions Goal Seek"]
+    partial: ["Mentions Solver but not Goal Seek"]
+    incorrect: ["No valid tool"]
+
+# =======================
+# Scenarios
+# =======================
+
+- id: SC-L1-BASIC-001
+  kind: scenario
+  level_tag: beginner
+  topic: Basic_Formulas
+  text: "You are a data analyst at a retail company. You've received a 10k-row sales dataset with columns for Date, Region, Product, Units Sold, and Revenue. Your manager needs a clean monthly summary by region with totals and averages, plus a visual representation of the data. Clean the dataset (handling missing values and formatting issues), create a monthly summary by region, add conditional formatting to highlight top-performing regions, and create a chart to visualize the trends."
+  assesses: ["Pivots_Charts", "Conditional_Logic", "Formatting"]
+  rubric:
+    correct:
+      [
+        "Builds PivotTable",
+        "Summarizes by region/month",
+        "Adds chart + formatting",
+      ]
+    partial: ["Only partial summary or chart"]
+    incorrect: ["Does not use Pivot or summary tools"]
+
+- id: SC-L1-BASIC-002
+  kind: scenario
+  level_tag: beginner
+  topic: Data_Validation
+  text: "You work in HR and need to create an employee timesheet template. The template should include employee name, date, hours worked (must be between 0-24), and project code (must be from a predefined list of 5 project codes). The template should automatically calculate overtime hours (anything over 8 hours per day) and highlight days with overtime in yellow. Create this template with appropriate data validation rules and conditional formatting."
+  assesses: ["Data_Validation", "Basic_Formulas", "Formatting"]
+  rubric:
+    correct:
+      [
+        "Creates data validation for hours and project codes",
+        "Implements overtime formula",
+        "Adds conditional formatting",
+      ]
+    partial: ["Implements some but not all requirements"]
+    incorrect: ["No data validation or incorrect formulas"]
+
+- id: SC-L2-IF-001
+  kind: scenario
+  level_tag: intermediate
+  topic: Conditional_Logic
+  text: "You are a financial analyst at a manufacturing company. You've been tasked with creating a dynamic sales performance dashboard for the executive team. You have quarterly sales data for 20 products across 5 regions over the past 2 years. The executives want to see performance metrics with color-coded indicators showing whether each product/region is meeting targets (green), close to target (yellow), or below target (red). They also want to be able to filter the dashboard by region, product category, and time period. Create this dashboard using conditional formatting, data validation for filters, and appropriate charts."
+  assesses: ["Conditional_Logic", "Formatting", "Data_Validation"]
+  rubric:
+    correct:
+      [
+        "Implements conditional formatting with formulas",
+        "Creates interactive filters",
+        "Builds dynamic charts",
+      ]
+    partial: ["Only implements basic conditional formatting or static filters"]
+    incorrect: ["No conditional formatting or no filtering capability"]
+
+- id: SC-L2-LOOKUP-001
+  kind: scenario
+  level_tag: intermediate
+  topic: Lookups
+  text: "You work in inventory management for a warehouse with thousands of products. You need to create a stock lookup tool that allows users to enter a product code and instantly see current stock levels, reorder points, supplier information, and price. The data is spread across multiple worksheets: Products (with codes and descriptions), Inventory (with stock levels and reorder points), Suppliers (with contact information), and Pricing. Create a user-friendly lookup form that pulls all this information together using lookup functions."
+  assesses: ["Lookups", "Data_Validation", "User_Interface"]
+  rubric:
+    correct:
+      [
+        "Implements VLOOKUP or XLOOKUP across worksheets",
+        "Creates user-friendly input form",
+        "Shows all required information",
+      ]
+    partial: ["Basic lookup functionality but missing some data points"]
+    incorrect: ["No working lookup functionality"]
+
+- id: SC-L3-SALES-001
+  kind: scenario
+  level_tag: advanced
+  topic: Pivots_Charts
+  text: "As a business intelligence analyst at a global e-commerce company, you've been tasked with creating an interactive sales analysis dashboard. You have a complex dataset with 50,000 transactions containing customer demographics, product details, sales channels, and geographic information spanning 3 years. The executive team needs a comprehensive dashboard that allows them to analyze sales trends, customer segments, and product performance with the ability to drill down into specific time periods, regions, or product categories. Create this dashboard using advanced pivot tables, slicers, timelines, calculated fields, and dynamic charts that update based on user selections."
+  assesses:
+    ["Pivots_Charts", "Conditional_Logic", "Formatting", "Advanced_Formulas"]
+  rubric:
+    correct:
+      [
+        "Creates advanced PivotTables with calculated fields",
+        "Implements interactive slicers and timelines",
+        "Builds dynamic charts with drill-down capability",
+      ]
+    partial: ["Basic pivot tables but limited interactivity or calculation"]
+    incorrect: ["No pivot tables or no interactive elements"]
+
+- id: SC-L3-DATA-001
+  kind: scenario
+  level_tag: advanced
+  topic: Data_Analysis
+  text: "You're a data analyst at a marketing agency evaluating campaign performance. You have a complex dataset tracking multiple metrics (impressions, clicks, conversions, cost) across different channels (social, search, email, display) for various client campaigns. Your task is to create a comprehensive analysis tool that can identify the most cost-effective channels, predict future performance based on historical trends, and recommend optimal budget allocation. Use advanced Excel functions, data tables for what-if analysis, and statistical tools to create this analysis dashboard."
+  assesses: ["Data_Analysis", "Array_Formulas", "What_If"]
+  rubric:
+    correct:
+      [
+        "Implements advanced formulas for ROI calculations",
+        "Creates data tables for sensitivity analysis",
+        "Uses statistical functions for predictions",
+      ]
+    partial: ["Basic calculations but limited analysis capabilities"]
+    incorrect: ["No advanced functions or analysis tools"]
+
+- id: SC-L4-MERGE-001
+  kind: scenario
+  level_tag: expert
+  topic: Power_Query
+  text: "As a data engineer at a multinational corporation, you're responsible for creating an automated financial reporting system. You have data coming from multiple sources: an ERP system (exported as CSV files), a CRM database (SQL Server), web analytics (JSON format), and manually maintained spreadsheets. These data sources use different date formats, naming conventions, and structures. Your task is to use Power Query to extract, transform, and load this data into a unified model, resolve all data inconsistencies, create relationships between tables, and build an automated dashboard that refreshes daily. The system should handle currency conversions, fiscal vs. calendar year reporting, and include exception handling for missing or incorrect data."
+  assesses:
+    ["Power_Query", "Advanced_Formulas", "Dashboarding", "Data_Modeling"]
+  rubric:
+    correct:
+      [
+        "Implements Power Query for multiple data sources",
+        "Creates data model with relationships",
+        "Handles data type conversions and errors",
+        "Builds automated refresh process",
+      ]
+    partial:
+      [
+        "Basic Power Query implementation but limited transformation or modeling",
+      ]
+    incorrect: ["No Power Query usage or inability to integrate data sources"]
+
+- id: SC-L4-AUTOMATION-001
+  kind: scenario
+  level_tag: expert
+  topic: VBA_Macros
+  text: "You're an IT systems analyst at a financial institution that processes thousands of transaction reports daily. Currently, these reports arrive as individual Excel files from different departments and must be manually consolidated, validated, and formatted before being imported into the central database. You need to create an automated solution using VBA that can: 1) Scan a specified folder for new report files, 2) Open each file and extract the relevant data, 3) Validate the data against business rules, 4) Flag exceptions for review, 5) Consolidate valid data into a master report with proper formatting, and 6) Generate a log of processed files and any errors encountered. The solution should run automatically when triggered and handle exceptions gracefully."
+  assesses: ["VBA_Macros", "Error_Handling", "Automation"]
+  rubric:
+    correct:
+      [
+        "Creates VBA procedures for file processing",
+        "Implements error handling and validation",
+        "Builds automated workflow with logging",
+      ]
+    partial: ["Basic VBA code but limited error handling or automation"]
+    incorrect: ["No functional VBA code or inability to process files"]

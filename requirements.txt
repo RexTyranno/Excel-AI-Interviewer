@@ -1,0 +1,6 @@
+pyyaml
+openai>=1.0.0
+langchain
+langgraph
+langchain-openai
+streamlit
