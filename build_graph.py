@@ -50,11 +50,23 @@ def build_graph():
         if s.get("should_run_scenario") and not s.get("scenario_done"):
             return g  # routed by conditional edges
 
-        asked: AskedQuestion
-        asked, s = interviewer.ask_next(s)
+        try:
+            asked: AskedQuestion
+            asked, s = interviewer.ask_next(s)
+        except RuntimeError as e:
+            if "No viable questions remain" in str(e):
+                s["should_end"] = True
+                s["phase"] = "conclusion"
+                g["state"] = s
+                return g
+            raise
 
         progress_info = interviewer.get_progress_info(s)
         qtext = interviewer.render_question_text(asked, s)
+
+        # Persist state BEFORE pausing so the asked question is checkpointed
+        g["state"] = s
+
         answer_text = interrupt({
             "id": asked["id"],
             "question": qtext,
@@ -71,10 +83,22 @@ def build_graph():
 
     def scenario_node(g: GraphState) -> GraphState:
         s = g["state"]
-        asked, s = interviewer.ask_next(s)
+        try:
+            asked, s = interviewer.ask_next(s)
+        except RuntimeError as e:
+            if "No viable questions remain" in str(e):
+                s["should_end"] = True
+                s["phase"] = "conclusion"
+                g["state"] = s
+                return g
+            raise
 
         progress_info = interviewer.get_progress_info(s)
         qtext = interviewer.render_question_text(asked, s)
+
+        # Persist state BEFORE pausing
+        g["state"] = s
+
         answer_text = interrupt({
             "id": asked["id"],
             "question": qtext,
