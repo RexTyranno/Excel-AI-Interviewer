@@ -183,7 +183,3 @@ Notes:
 - Richer scenario branching and multi-turn hints
 - Exportable report (PDF/Markdown) of interview summary
 - Admin panel to review events/scores
-
-## License
-
-Specify your preferred license (e.g., MIT). If you want, I can add the text and a `LICENSE` file.
